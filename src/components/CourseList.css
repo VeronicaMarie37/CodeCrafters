@@ -1,0 +1,44 @@
+
+.course-list {
+    display: -moz-grid-group;
+    flex-direction: grid; 
+    align-items: flex-start; 
+    margin: 20px auto;
+    max-width: 1200px;
+    
+  }
+  
+  .course-list h2 {
+    margin-bottom: 20px; 
+  }
+  
+  .course-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 300px ; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-card h3 {
+    margin-top: 0;
+  }
+  
+  .course-card p {
+    margin: 10px 0;
+  }
+  
+  .view-details-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .view-details-button:hover {
+    background-color: #0056b3;
+  }
+  
