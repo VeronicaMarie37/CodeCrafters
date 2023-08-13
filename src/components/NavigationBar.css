@@ -1,28 +1,23 @@
+.navbar.bg-sage {
+  background-color: #88A59E !important; /* Sage green background */
+}
 
+.nav-link {
+  color: #f8f9fa !important; /* Light text color */
+}
 
-nav {
-    background-color: #333;
-    padding: 10px;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  li {
-    margin: 0 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+.nav-link:hover {
+  color: #688E76 !important; /* Darker shade of sage for hover effect */
+  text-decoration: none;
+}
+
+.navbar-brand {
+  color: #000306 !important; /* Light text color for brand name */
+}
+
+.brand-text {
+  color: black !important;
+  position: center;
+  left: 50%;
+  transform: translateX(-50%);
+}

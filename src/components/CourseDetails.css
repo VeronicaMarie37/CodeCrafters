@@ -1,0 +1,9 @@
+.btn-sage {
+    background-color: #88A67D; /* This is an example sage color value */
+    color: #fff;
+}
+
+.btn-sage:hover {
+    background-color: #778B6E; /* This is a darker shade of the example sage color */
+    color: #fff;
+}

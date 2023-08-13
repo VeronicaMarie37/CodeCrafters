@@ -1,0 +1,36 @@
+/* EditCourse.css */
+
+.theme-heading {
+    color: #556B2F;  /* Dark Olive Green */
+}
+
+.save-changes-btn {
+    background-color: #8B4513;  /* Saddle Brown */
+    border-color: #A0522D;      /* Sienna */
+    color: #fff;
+}
+
+.save-changes-btn:hover {
+    background-color: #A0522D;  /* Sienna */
+    border-color: #8B4513;      /* Saddle Brown */
+}
+
+.cancel-btn {
+    background-color: #8B4513;  /* Saddle Brown */
+    border-color: #A0522D;      /* Sienna */
+    color: #fff;
+}
+
+.cancel-btn:hover {
+    background-color: #A0522D;  /* Sienna */
+    border-color: #8B4513;      /* Saddle Brown */
+}
+
+.form-control {
+    border-color: #A0522D;      /* Sienna */
+}
+
+.form-control:focus {
+    border-color: #8B4513;      /* Saddle Brown */
+    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);  /* Saddle Brown with transparency */
+}
