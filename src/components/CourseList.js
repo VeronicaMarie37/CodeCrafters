@@ -39,13 +39,16 @@ const CourseList = () => {
       method: 'DELETE',
     })
       .then(() => {
-        // Remove the deleted course from the courses state
-        setCourses(courses.filter((course) => course.id !== id));
-      })
+      // Remove the deleted course from the courses state
+      setCourses(courses.filter((course) => course._id !== id));
+      console.log('State after deleting:', courses);
+    })
+    
       .catch((error) => {
         console.error('Error deleting course:', error);
       });
   };
+  
 
   return (
     <div className="course-list">
@@ -58,16 +61,17 @@ const CourseList = () => {
           <p>{course.description}</p>
           <img src={course.image} alt={course.title} />
           <p>Language: {course.language}</p>
-          <Link to={`/courses/${course.id}`} className="btn btn-primary">
+          <Link to={`/courses/${course._id}`} className="btn btn-primary">
             View Details
           </Link>
+
           <button
-            onClick={() => handleDeleteCourse(course.id)}
+            onClick={() => handleDeleteCourse(course._id)}
             className="btn btn-danger mx-2"
           >
             Delete
           </button>
-          <Link to={`/courses/${course.id}/edit`} className="btn btn-warning">
+          <Link to={`/courses/${course._id}/edit`} className="btn btn-warning">
             Edit
           </Link>
         </div>

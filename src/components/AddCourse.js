@@ -21,12 +21,19 @@ const AddCourse = ({ onAddCourse }) => {
       [name]: value,
     }));
   };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     onAddCourse(newCourse);
+    setNewCourse({
+        title: '',
+        description: '',
+        image: '',
+        language: '',
+    });
     handleCloseModal();
-  };
+};
+
 
   return (
     <>
