@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'; 
-import codeverseLogo from '../nature-3125912_640.jpg';
+import codeVerseLogo from '../nature-3125912_640.jpg';
 
 const Header = () => {
   return (
     <header>
       <div className="logo">
         <Link to="/">
-          <img src={codeverseLogo} alt="CodeVerse Logo" />
+          <img src={codeVerseLogo} alt="CodeVerse Logo" />
         </Link>
       </div>
       <nav>

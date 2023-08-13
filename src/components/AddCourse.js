@@ -26,14 +26,13 @@ const AddCourse = ({ onAddCourse }) => {
     e.preventDefault();
     onAddCourse(newCourse);
     setNewCourse({
-        title: '',
-        description: '',
-        image: '',
-        language: '',
+      title: '',
+      description: '',
+      image: '',
+      language: '',
     });
     handleCloseModal();
-};
-
+  };
 
   return (
     <>
@@ -56,6 +55,7 @@ const AddCourse = ({ onAddCourse }) => {
                 onChange={handleChange}
               />
             </Form.Group>
+
             <Form.Group controlId="description">
               <Form.Label>Description</Form.Label>
               <Form.Control
@@ -66,6 +66,7 @@ const AddCourse = ({ onAddCourse }) => {
                 onChange={handleChange}
               />
             </Form.Group>
+
             <Form.Group controlId="image">
               <Form.Label>Image URL</Form.Label>
               <Form.Control
@@ -75,6 +76,7 @@ const AddCourse = ({ onAddCourse }) => {
                 onChange={handleChange}
               />
             </Form.Group>
+
             <Form.Group controlId="language">
               <Form.Label>Language</Form.Label>
               <Form.Control
@@ -84,13 +86,12 @@ const AddCourse = ({ onAddCourse }) => {
                 onChange={handleChange}
               />
             </Form.Group>
-            <button 
-              type="submit" 
-              className="btn"
-              style={{ backgroundColor: '#A8D5BA', borderColor: '#A8D5BA' }}>  {/* Soft sage green */}
-              Add Course
-            </button>
 
+            <Button 
+              type="submit" 
+              className="btn add-course-btn">
+              Add Course
+            </Button>
           </Form>
         </Modal.Body>
       </Modal>
@@ -99,5 +100,3 @@ const AddCourse = ({ onAddCourse }) => {
 };
 
 export default AddCourse;
-
-

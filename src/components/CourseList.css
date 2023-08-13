@@ -1,15 +1,44 @@
+/* General styles */
+.course-list h2 {
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.add-course-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Course card styles */
+.course-card {
+    padding: 1rem;
+    background-color: #EDE3E9;
+    color: #3B2C35;
+}
+
+/* Button styles */
+.delete-btn {
+    background-color: #D5A9B4;
+    border-color: #D5A9B4;
+}
+
+.edit-btn {
+    background-color: #A8D5BA;
+    border-color: #A8D5BA;
+}
 
 .btn-primary {
-    --bs-btn-color: #121111;
-    --bs-btn-bg: #aa5519;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8B4513;
     --bs-btn-border-color: #A0522D;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #A0522D;
     --bs-btn-hover-border-color: #8B4513;
-}
-
-.add-course-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
