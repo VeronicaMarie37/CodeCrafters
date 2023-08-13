@@ -174,7 +174,7 @@ const EditCourse = () => {
 
       if (response.ok) {
         // Redirect back to the course details after editing
-        navigate(`/courses/${id}`);
+        navigate(`/`);
       } else {
         console.error('Failed to update course');
       }
@@ -239,7 +239,7 @@ const EditCourse = () => {
           <button type="submit" className="btn btn-success">
             Save Changes
           </button>
-          <Link to={`/courses/${id}`} className="btn btn-secondary ml-2">
+          <Link to={`/`} className="btn btn-secondary ml-2">
             Cancel
           </Link>
         </div>
