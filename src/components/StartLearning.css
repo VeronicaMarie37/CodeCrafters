@@ -1,0 +1,95 @@
+/* Base colors for the Earthy Theme */
+:root {
+    --primary-color: #4e8d7c;  /* Green reminiscent of forest */
+    --secondary-color: #d1c4a2;  /* Beige like sand */
+    --accent-color: #875f42;  /* Brown like bark */
+    --background-color: #f6f4e6;  /* Light beige like old parchment */
+    --text-color: #4d4d4d;  /* Dark gray for contrast */
+  }
+  
+  .learning-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+  }
+  
+  .instructions-container {
+    width: 20%;
+    border-right: 2px solid var(--accent-color);
+    padding-right: 20px;
+  }
+  
+  .instruction-step {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--accent-color);
+  }
+  
+  .instruction-step:last-child {
+    border-bottom: none;
+  }
+  
+  h2, h3 {
+    color: var(--text-color);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: var(--text-color);
+  }
+  
+  /* Code Editor styling */
+  textarea {
+    width: 100%;  /* Use the full width of its container */
+    height: 300px;  /* Set a specific height */
+    min-height: 300px;  /* Minimum height for the textarea */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-color);
+  }
+
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--accent-color);
+  }
+  
+  pre {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-color);
+  }
+  /* ... Your existing CSS ... */
+
+.instructions-scroll-container {
+    max-height: 80vh;  /* Adjust according to your needs */
+    overflow-y: scroll;
+    padding-right: 1rem;  /* Padding to avoid content touching the scrollbar */
+  }
+  
