@@ -90,35 +90,3 @@ function StartLearning() {
 }
 
 export default StartLearning;
-
-
-// import React from 'react';
-// import CodeEditor from './CodeEditor';
-
-// import './StartLearning.css';
-
-// function StartLearning() {
-//   return (
-//     <div className="learning-container">
-//       <div className="instructions-container">
-//         <h2>Step-by-Step Instructions</h2>
-
-//         {/* Step 1 */}
-//         <div className="instruction-step">
-//           <h3>Step 1: Define the DOCTYPE</h3>
-//           <p>Start your HTML document with the {"<!DOCTYPE>"} declaration which defines the version of HTML.</p>
-//         </div>
-
-//         {/* Step 2 */}
-//         <div className="instruction-step">
-//           <h3>Step 2: Add an HTML tag</h3>
-//           <p>...</p>
-//         </div>
-//         {/* ... Add more steps as necessary */}
-//       </div>
-//       <CodeEditor />
-//     </div>
-//   );
-// }
-
-// export default StartLearning;
